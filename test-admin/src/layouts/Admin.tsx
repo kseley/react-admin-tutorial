@@ -40,6 +40,8 @@ import {
 
 //const userRole: string | null = Cookies.getCookie('role') ? Cookies.getCookie('role') : 'Guest'
 
+//https://www.makeuseof.com/react-create-collapsible-side-navigation-menu/
+
 const MyMenu = () => {
 	return (
 		<MultiLevelMenu>
