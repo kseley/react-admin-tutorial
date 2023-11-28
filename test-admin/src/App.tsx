@@ -10,14 +10,17 @@ import { Dashboard } from "./Dashboard";
 //import { MyLayout } from "./MyLayout";
 import { authProvider } from "./authProvider";
 import { dataProvider } from "./dataProvider";
-//import { UserList } from "./users";
-//import { PostList, PostEdit, PostCreate } from "./posts";
-//import PostIcon from "@mui/icons-material/Book";
-//import UserIcon from "@mui/icons-material/Group";
+import { UserList } from "./users";
+import { PostList, PostEdit, PostCreate } from "./posts";
+import PostIcon from "@mui/icons-material/Book";
+import UserIcon from "@mui/icons-material/Group";
+import Sidenav from "./Component/Sidenav";
+import Home from "./Pages/Home";
 
+import { AdminLayout } from "./layouts";
 import { GuestLayout } from "./layouts";
 
-let layout: any = GuestLayout;
+let layout: any = AdminLayout;
 
 const Layout = layout
 
@@ -36,7 +39,7 @@ export const App = () => (
       },
     }}
   >
-{/*     <Resource 
+    <Resource 
       name="posts" 
       list={PostList} 
       edit={PostEdit} 
@@ -50,5 +53,5 @@ export const App = () => (
       recordRepresentation="name"
       icon={UserIcon}
     />
- */}  </Admin>
+  </Admin>
 );

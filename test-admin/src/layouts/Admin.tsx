@@ -1,31 +1,34 @@
 import clsx from 'clsx'
+import { Menu } from 'react-admin';
+import LabelIcon from '@mui/icons-material/Label';
+import Sidenav from '../Component/Sidenav';
 //import Cookies from '../helpers/Cookies'
 
 import { useState, ErrorInfo, ReactNode, ComponentType, HtmlHTMLAttributes, createElement } from 'react'
 import { CoreLayoutProps } from 'ra-core'
 import { ErrorBoundary } from 'react-error-boundary'
 import { styled, SxProps } from '@mui/material/styles'
-i//mport { MultiLevelMenu, AppLocationContext } from '@react-admin/ra-navigation'
-import OrganizationIcon from '@mui/icons-material/CorporateFare'
-import BoardMemberIcon from '@mui/icons-material/Diversity3'
+//mport { MultiLevelMenu, AppLocationContext } from '@react-admin/ra-navigation'
+//import OrganizationIcon from '@mui/icons-material/CorporateFare'
+//import BoardMemberIcon from '@mui/icons-material/Diversity3'
 import AdminAppBar from './components/AdminAppBar'
-import EmployeeIcon from '@mui/icons-material/Engineering'
-import PolicyIcon from '@mui/icons-material/ContentCopy'
-import VehicleIcon from '@mui/icons-material/DirectionsCar'
+//import EmployeeIcon from '@mui/icons-material/Engineering'
+//import PolicyIcon from '@mui/icons-material/ContentCopy'
+//import VehicleIcon from '@mui/icons-material/DirectionsCar'
 import UsersIcon from '@mui/icons-material/People'
-import PropertyIcon from '@mui/icons-material/HomeWork'
-import InlandMarineIcon from '@mui/icons-material/RvHookup'
-import RateTableIcon from '@mui/icons-material/LocalAtm'
-import RequestQuoteIcon from '@mui/icons-material/RequestQuote'
-import AddchartIcon from '@mui/icons-material/Addchart'
-import BiotechIcon from '@mui/icons-material/Biotech'
-import BlurCircularIcon from '@mui/icons-material/BlurCircular'
-import BorderHorizontalIcon from '@mui/icons-material/BorderHorizontal'
-import BreakfastDiningIcon from '@mui/icons-material/BreakfastDining'
-import BroadcastOnHomeIcon from '@mui/icons-material/BroadcastOnHome'
-import AssistantPhotoIcon from '@mui/icons-material/AssistantPhoto'
-import CabinIcon from '@mui/icons-material/Cabin'
-import CatchingPokemonIcon from '@mui/icons-material/CatchingPokemon'
+//import PropertyIcon from '@mui/icons-material/HomeWork'
+//import InlandMarineIcon from '@mui/icons-material/RvHookup'
+//import RateTableIcon from '@mui/icons-material/LocalAtm'
+//import RequestQuoteIcon from '@mui/icons-material/RequestQuote'
+//import AddchartIcon from '@mui/icons-material/Addchart'
+//import BiotechIcon from '@mui/icons-material/Biotech'
+//import BlurCircularIcon from '@mui/icons-material/BlurCircular'
+//import BorderHorizontalIcon from '@mui/icons-material/BorderHorizontal'
+//import BreakfastDiningIcon from '@mui/icons-material/BreakfastDining'
+//import BroadcastOnHomeIcon from '@mui/icons-material/BroadcastOnHome'
+//import AssistantPhotoIcon from '@mui/icons-material/AssistantPhoto'
+//import CabinIcon from '@mui/icons-material/Cabin'
+//import CatchingPokemonIcon from '@mui/icons-material/CatchingPokemon'
 import SettingsIcon from '@mui/icons-material/Settings'
 import {
 	AppBarProps,
@@ -44,81 +47,13 @@ import {
 
 const MyMenu = () => {
 	return (
-		<MultiLevelMenu>
-			<MultiLevelMenu.Item name="organizations" to="/organizations" label="Organization" icon={<OrganizationIcon />} />
-			<MultiLevelMenu.Item name="users" to="/users" label="Users" icon={<UsersIcon />} />
-			<MultiLevelMenu.Item name="policies" to="/policies" label="Policies" icon={<PolicyIcon />} />
-			<MultiLevelMenu.Item name="board-members" to="/board-members" label="Board Members" icon={<BoardMemberIcon />} />
-			<MultiLevelMenu.Item name="employees" to="/employees" label="Employees" icon={<EmployeeIcon />} />
-			<MultiLevelMenu.Item name="properties" to="/properties" label="Properties" icon={<PropertyIcon />} />
-			<MultiLevelMenu.Item name="vehicles" to="/vehicles" label="Vehicles" icon={<VehicleIcon />} />
-			<MultiLevelMenu.Item name="claim-infos" to="/claim-infos" label="Claim" icon={<AssistantPhotoIcon />} />
-			<MultiLevelMenu.Item
-				name="inland-marines"
-				to="/inland-marines"
-				label="Inland Marines"
-				icon={<InlandMarineIcon />}
-			/>
-			<MultiLevelMenu.Item
-				name="quote-a-request"
-				to="/quote-request"
-				label="Quote Wizard"
-				icon={<RequestQuoteIcon />}
-			/>
-			<MultiLevelMenu.Item name="file-a-claim" to="/file-a-claim" label="File Claim" icon={<AddchartIcon />} />
-
-			{/* The empty filter is required to avoid falling back to the previously set filter */}
-
-			{userRole === 'Admin' && (
-				<>
-					<MultiLevelMenu.Item name="settings" to="/admin/settings" label="Settings" icon={<SettingsIcon />} />
-					<MultiLevelMenu.Item name="table" label="Products Rates" icon={<RateTableIcon />}>
-						<MultiLevelMenu.Item
-							name="vehicle-rates"
-							to="/admin/vehicle-rates"
-							label="Automobile"
-							icon={<BiotechIcon />}
-						/>
-						<MultiLevelMenu.Item
-							icon={<BlurCircularIcon />}
-							name="director-officer-rates"
-							to={'/admin/director-officer-rates'}
-							label="Directors & Officers Rate"
-						/>
-						<MultiLevelMenu.Item
-							icon={<BorderHorizontalIcon />}
-							name="employment-rates"
-							to={'/admin/employment-rates'}
-							label="Employment"
-						/>
-						<MultiLevelMenu.Item
-							icon={<BreakfastDiningIcon />}
-							name="employee-rates"
-							to={'/admin/employee-rates'}
-							label="Employee"
-						/>
-						<MultiLevelMenu.Item
-							icon={<BroadcastOnHomeIcon />}
-							name="general-liability-rates"
-							to={'/admin/general-liability-rates'}
-							label="General Liability"
-						/>
-						<MultiLevelMenu.Item
-							icon={<CabinIcon />}
-							name="inland-marine-rates"
-							to="/admin/inland-marine-rates"
-							label="Inland Marine"
-						/>
-						<MultiLevelMenu.Item
-							icon={<CatchingPokemonIcon />}
-							name="property-rates"
-							to="/admin/property-rates"
-							label="Property"
-						/>
-					</MultiLevelMenu.Item>
-				</>
-			)}
-		</MultiLevelMenu>
+		//<Sidenav />
+		<Menu>
+        	<Menu.DashboardItem />
+        	<Menu.ResourceItem name="jobs" />
+        	<Menu.ResourceItem name="users" />
+        	<Menu.Item to="/custom-route" primaryText="Miscellaneous" leftIcon={<LabelIcon />} />
+    	</Menu>	
 	)
 }
 
@@ -143,7 +78,7 @@ export default (props: LayoutProps) => {
 	}
 
 	return (
-		<AppLocationContext>
+		//<AppLocationContext>
 			<StyledLayout className={clsx('layout', className)} {...rest}>
 				<SkipNavigationButton />
 				<div className={LayoutClasses.appFrame}>
@@ -172,7 +107,7 @@ export default (props: LayoutProps) => {
 					<Inspector />
 				</div>
 			</StyledLayout>
-		</AppLocationContext>
+		//</AppLocationContext>
 	)
 }
 
