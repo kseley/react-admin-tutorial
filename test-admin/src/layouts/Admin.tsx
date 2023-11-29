@@ -1,7 +1,6 @@
 import clsx from 'clsx'
 import { Menu } from 'react-admin';
 import LabelIcon from '@mui/icons-material/Label';
-import Sidenav from '../Component/Sidenav';
 //import Cookies from '../helpers/Cookies'
 
 import { useState, ErrorInfo, ReactNode, ComponentType, HtmlHTMLAttributes, createElement } from 'react'
@@ -50,7 +49,7 @@ const MyMenu = () => {
 		//<Sidenav />
 		<Menu>
         	<Menu.DashboardItem />
-        	<Menu.ResourceItem name="jobs" />
+        	<Menu.ResourceItem name="posts" />
         	<Menu.ResourceItem name="users" />
         	<Menu.Item to="/custom-route" primaryText="Miscellaneous" leftIcon={<LabelIcon />} />
     	</Menu>	

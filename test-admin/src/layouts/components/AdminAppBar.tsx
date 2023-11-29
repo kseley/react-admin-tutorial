@@ -50,6 +50,6 @@ export default memo(props => (
             </Box>
         </TitlePortal>
         <Typography flex="1" variant="h6" id="react-admin-title" />
-        <InspectorButton />
+             <InspectorButton />
     </AppBar>
 ))
